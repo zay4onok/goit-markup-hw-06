@@ -69,7 +69,7 @@ p {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .container {
@@ -295,11 +295,13 @@ p {
 
 .features__list {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
 .features__item {
-  width: calc((100% - 48px) / 3);
+  text-align: center;
+  width: 100%;
 }
 
 .features__item-box {
@@ -311,6 +313,7 @@ p {
   height: 112px;
   border-radius: 4px;
   margin-bottom: 8px;
+  display: none;
 }
 
 /* services */
@@ -892,6 +895,16 @@ p {
     font-size: 56px;
     line-height: 1.07;
   }
+
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    text-align: left;
+    width: calc((100% - 24px) / 2);
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -916,11 +929,21 @@ p {
 }
 
 @media only screen and (min-width: 1160px) {
+  .section {
+    padding: 120px 0;
+  }
   .hero {
     max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-bg_desk.jpg);
+  }
+  .features__item-box {
+    display: flex;
+  }
+  .features__item {
+    text-align: left;
+    width: calc((100% - 72px) / 4);
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
