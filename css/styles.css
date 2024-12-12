@@ -93,8 +93,7 @@ p {
 
 .social-media {
   display: flex;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;
 }
 .social-media__item {
   width: 40px;
@@ -374,11 +373,14 @@ p {
 
 .team__list {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .team__member {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
+  max-width: 264px;
   text-align: center;
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
@@ -913,6 +915,13 @@ p {
     text-align: left;
     width: calc((100% - 24px) / 2);
   }
+  .team__list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 62px 24px;
+  }
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
