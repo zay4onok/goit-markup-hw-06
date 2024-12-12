@@ -125,7 +125,6 @@ p {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
   min-width: 320px;
-  max-width: 428px;
   margin: 0 auto;
 }
 
@@ -239,7 +238,6 @@ p {
 .hero {
   padding: 112px 0;
   min-width: 320px;
-  max-width: 428px;
   margin: 0 auto;
 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -886,9 +884,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-  .header {
-    max-width: 768px;
-  }
   .menu__toggle {
     display: none;
   }
@@ -899,7 +894,6 @@ p {
     display: flex;
   }
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-bg_tab.jpg);
   }
@@ -964,9 +958,6 @@ p {
   .section {
     padding: 120px 0;
   }
-  .header {
-    max-width: 1440px;
-  }
   .address__list {
     flex-direction: row;
     gap: 40px;
@@ -975,7 +966,6 @@ p {
     letter-spacing: 0.02em;
   }
   .hero {
-    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-bg_desk.jpg);
