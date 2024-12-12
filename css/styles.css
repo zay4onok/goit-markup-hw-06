@@ -31,6 +31,7 @@ body {
 
 a {
   color: inherit;
+  outline: none;
 }
 
 img {
@@ -40,12 +41,14 @@ img {
 input {
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 button {
   background-color: transparent;
   border: none;
   padding: 0;
+  outline: none;
 }
 
 h1,
@@ -399,11 +402,12 @@ p {
 /* ! filter */
 
 .portfolio__filter {
-  padding-top: 96px;
-  margin-bottom: 72px;
+  padding-top: 48px;
+  margin-bottom: 48px;
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
+  justify-content: leff;
   align-items: center;
 }
 
@@ -435,13 +439,13 @@ p {
 
 .portfolio__cards {
   display: flex;
-  gap: 48px 24px;
-  flex-wrap: wrap;
-  margin-bottom: 120px;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 48px;
 }
 
 .portfolio__card {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
 }
 
 .portfolio__card-content {
@@ -450,7 +454,7 @@ p {
 }
 
 .portfolio__card-content:hover .portfolio__card-content-text,
-.portfolio__card-content:focus .portfolio__card-content-text {
+.portfolio__card-link:focus .portfolio__card-content-text {
   transform: translateY(0);
 }
 
@@ -946,6 +950,25 @@ p {
     width: 264px;
   }
 
+  .portfolio__filter {
+    padding-top: 64px;
+    margin-bottom: 64px;
+    justify-content: center;
+  }
+
+  .portfolio__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    margin-bottom: 96px;
+  }
+
+  .portfolio__card {
+    width: 356px;
+  }
+  .portfolio__card-img {
+    height: 300px;
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -1002,6 +1025,16 @@ p {
   }
   .footer__social-media {
     margin-right: 80px;
+  }
+  .portfolio__card {
+    width: 360px;
+  }
+  .portfolio__filter {
+    padding-top: 100px;
+    margin-bottom: 72px;
+  }
+  .portfolio__cards {
+    margin-bottom: 120px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
