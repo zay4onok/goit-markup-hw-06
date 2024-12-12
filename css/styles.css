@@ -775,9 +775,14 @@ p {
   line-height: 2;
   letter-spacing: 0.04em;
   color: var(--white);
+  transition: border-color 300ms;
 }
 .form__email::placeholder {
   color: var(--white);
+}
+
+.form__email:focus {
+  border-color: var(--iris);
 }
 
 .form__btn {
@@ -792,6 +797,11 @@ p {
   padding: 8px 24px;
   margin: 0 auto;
   cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.form__btn:focus {
+  background-color: var(--ocean);
 }
 
 .form__btn-img {
@@ -1065,6 +1075,9 @@ p {
     border-color: var(--ocean);
     color: var(--ocean);
   }
+  .form__btn:hover {
+    background-color: var(--ocean);
+  }
 }
 
 @media not (hover: hover) {
@@ -1087,5 +1100,8 @@ p {
   .customers__link:active {
     border-color: var(--ocean);
     color: var(--ocean);
+  }
+  .form__btn:active {
+    background-color: var(--ocean);
   }
 }
