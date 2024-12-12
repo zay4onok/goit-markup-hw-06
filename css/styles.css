@@ -45,6 +45,7 @@ input {
 button {
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 h1,
@@ -126,7 +127,7 @@ p {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
   min-width: 320px;
-  max-width: 1440px;
+  max-width: 428px;
   margin: 0 auto;
 }
 
@@ -191,6 +192,15 @@ p {
   bottom: -1px;
 }
 
+.menu__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__toggle-icon {
+  stroke: #000;
+}
+
 .address {
   font-style: normal;
 }
@@ -214,7 +224,7 @@ p {
 .hero {
   padding: 112px 0;
   min-width: 320px;
-  max-width: 320px;
+  max-width: 428px;
   margin: 0 auto;
 
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -760,6 +770,15 @@ p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767.98px) {
+  .address {
+    display: none;
+  }
+  .menu__list {
+    display: none;
+  }
+  .logo {
+    padding: 24px 0;
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -769,12 +788,18 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
   .address__list {
     flex-direction: column;
     gap: 12px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+  }
+  .menu__toggle {
+    display: none;
   }
   .hero {
     max-width: 768px;
