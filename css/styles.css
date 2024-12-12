@@ -683,7 +683,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 72px 16px;
 }
 .customers__item {
   width: calc((100% - 16px) / 2);
@@ -920,7 +920,12 @@ p {
     flex-wrap: wrap;
     gap: 62px 24px;
   }
-
+  .customers__list {
+    gap: 72px 24px;
+  }
+  .customers__item {
+    width: 168px;
+  }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
