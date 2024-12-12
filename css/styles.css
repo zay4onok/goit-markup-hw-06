@@ -208,7 +208,11 @@ p {
 
 .address__list {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .address__link {
@@ -870,13 +874,6 @@ p {
   .header {
     max-width: 768px;
   }
-  .address__list {
-    flex-direction: column;
-    gap: 12px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-  }
   .menu__toggle {
     display: none;
   }
@@ -931,6 +928,16 @@ p {
 @media only screen and (min-width: 1160px) {
   .section {
     padding: 120px 0;
+  }
+  .header {
+    max-width: 1160px;
+  }
+  .address__list {
+    flex-direction: row;
+    gap: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   .hero {
     max-width: 1440px;
