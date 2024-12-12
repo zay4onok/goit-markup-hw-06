@@ -715,20 +715,16 @@ p {
 
 .footer {
   background-color: var(--gray);
-  padding: 100px 0;
 }
 
 .footer__inner {
   display: flex;
-  align-items: baseline;
-}
-
-.footer__info {
-  margin-right: 120px;
-}
-
-.footer__social-media {
-  margin-right: 80px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 72px 24px;
+  margin: 0 auto;
+  max-width: 552px;
 }
 
 .social-media__text {
@@ -741,6 +737,7 @@ p {
   color: #f4f4fd;
   display: inline-block;
   margin-bottom: 16px;
+  padding: 0;
 }
 
 .footer__text {
@@ -754,14 +751,19 @@ p {
   margin-bottom: 16px;
 }
 
+.footer__form {
+  width: 100%;
+}
+
 .form__label {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .form__email {
-  width: 264px;
   height: 40px;
+  max-width: 398px;
   padding: 8px 16px;
   border: 1px solid var(--white);
   border-radius: 4px;
@@ -786,6 +788,7 @@ p {
   background-color: var(--iris);
   border-radius: 4px;
   padding: 8px 24px;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -926,6 +929,29 @@ p {
   .customers__item {
     width: 168px;
   }
+
+  .footer__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+  }
+
+  .form__label {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .form__btn {
+    margin: 0;
+  }
+
+  .form__email {
+    width: 264px;
+  }
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -939,7 +965,7 @@ p {
     padding: 120px 0;
   }
   .header {
-    max-width: 1160px;
+    max-width: 1440px;
   }
   .address__list {
     flex-direction: row;
@@ -963,6 +989,29 @@ p {
   }
   .services {
     display: block;
+  }
+
+  .footer__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 0px;
+    max-width: 1160px;
+    margin: 0;
+  }
+  .form__btn {
+    margin: 0;
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+  .footer__info {
+    min-width: 264px;
+    margin-right: 120px;
+  }
+  .footer__social-media {
+    margin-right: 80px;
   }
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero {
