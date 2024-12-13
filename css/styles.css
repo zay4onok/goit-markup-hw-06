@@ -1060,54 +1060,26 @@ p {
   }
 }
 
-@media (hover: hover) {
-  .social-media__link:hover {
-    background-color: var(--ocean);
-  }
-  .hero__btn:hover {
-    background-color: var(--ocean);
-  }
-  .modal-btn:hover {
-    background-color: var(--ocean);
-    border: none;
-  }
-  .modal-btn:hover .modal-btn-svg {
-    fill: #ffffff;
-  }
-  .modal-form-btn:hover {
-    background-color: var(--ocean);
-  }
-  .customers__link:hover {
-    border-color: var(--ocean);
-    color: var(--ocean);
-  }
-  .form__btn:hover {
-    background-color: var(--ocean);
-  }
+.social-media__link:hover {
+  background-color: var(--ocean);
 }
-
-@media not (hover: hover) {
-  .social-media__link:active {
-    background-color: var(--ocean);
-  }
-  .hero__btn:active {
-    background-color: var(--ocean);
-  }
-  .modal-btn:active {
-    background-color: var(--ocean);
-    border: none;
-  }
-  .modal-btn:active .modal-btn-svg {
-    fill: #ffffff;
-  }
-  .modal-form-btn:active {
-    background-color: var(--ocean);
-  }
-  .customers__link:active {
-    border-color: var(--ocean);
-    color: var(--ocean);
-  }
-  .form__btn:active {
-    background-color: var(--ocean);
-  }
+.hero__btn:hover {
+  background-color: var(--ocean);
+}
+.modal-btn:hover {
+  background-color: var(--ocean);
+  border: none;
+}
+.modal-btn:hover .modal-btn-svg {
+  fill: #ffffff;
+}
+.modal-form-btn:hover {
+  background-color: var(--ocean);
+}
+.customers__link:hover {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
+.form__btn:hover {
+  background-color: var(--ocean);
 }
