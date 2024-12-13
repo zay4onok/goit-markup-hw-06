@@ -1054,6 +1054,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 409px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 @media (hover: hover) {
   .social-media__link:hover {
     background-color: var(--ocean);
