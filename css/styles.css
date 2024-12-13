@@ -118,7 +118,7 @@ p {
 }
 
 .social-media__img {
-  fill: var(--cloud);
+  fill: currentColor;
 }
 
 /* ! header */
